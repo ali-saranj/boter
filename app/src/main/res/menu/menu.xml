@@ -21,7 +21,7 @@
             <item
                 android:id="@+id/darbare"
                 android:title="درباره ما"
-                android:icon="@mipmap/person_foreground"/>
+                android:icon="@android:drawable/ic_menu_help"/>
 
         </menu>
 
