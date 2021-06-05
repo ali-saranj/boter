@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setind"
+    android:orientation="vertical"
+    android:background="@drawable/bacgrand">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image4"
+            android:tag="4"
+            android:src="@drawable/gun"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"/>
+        <ImageView
+            android:id="@+id/image3"
+            android:tag="3"
+            android:src="@drawable/tabar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:tag="2"
+            android:src="@drawable/bottle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"/>
+        <ImageView
+            android:id="@+id/image1"
+            android:tag="1"
+            android:src="@drawable/samshir"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="انتخاب تصور"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

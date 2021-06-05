@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu"
+        android:title="menu"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/seting"
+                android:title="تنظیمات"
+                android:icon="@android:drawable/ic_menu_manage"/>
+            <item
+                android:id="@+id/amti"
+                android:title="امتیاز دهی"
+                android:icon="@android:drawable/btn_star_big_on"/>
+            <item
+                android:id="@+id/darbare"
+                android:title="درباره ما"
+                android:icon="@mipmap/person_foreground"/>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>
