@@ -3,55 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".setind"
+    android:background="@drawable/bacgrand"
     android:orientation="vertical"
-    android:background="@drawable/bacgrand">
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context=".setind">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center">
 
         <ImageView
             android:id="@+id/image4"
-            android:tag="4"
-            android:src="@drawable/gun"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:layout_margin="8dp"
-            android:onClick="imgclick"/>
+            android:onClick="imgclick"
+            android:src="@drawable/gun"
+            android:tag="4" />
+
         <ImageView
             android:id="@+id/image3"
-            android:tag="3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"
             android:src="@drawable/tabar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:onClick="imgclick"/>
-        <ImageView
-            android:id="@+id/image2"
-            android:tag="2"
-            android:src="@drawable/bottle"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:onClick="imgclick"/>
-        <ImageView
-            android:id="@+id/image1"
-            android:tag="1"
-            android:src="@drawable/samshir"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:onClick="imgclick"/>
+            android:tag="3" />
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"
+            android:src="@drawable/bottle"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:onClick="imgclick"
+            android:src="@drawable/samshir"
+            android:tag="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="8dp">
 
