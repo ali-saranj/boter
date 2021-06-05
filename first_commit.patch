@@ -1,0 +1,12 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision ba63833b4527d3fce2a21de1ba9a060a7e144313)
++++ README.md	(revision cc4c7bb912701c7ac39101b643c1f119d5b7bff9)
+@@ -1,1 +1,4 @@
+ "# boter" 
++# boter
++"# boter" 
++# boter
