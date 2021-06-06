@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater viewGroup = inflater1 = getMenuInflater();
+        inflater1 = getMenuInflater();
         inflater1.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
