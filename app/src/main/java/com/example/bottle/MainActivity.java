@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button    btn_h, btn_g;
     View           layout;
-    Random         random = new Random();
+    SecureRandom   random = new SecureRandom();
     LayoutInflater inflater;
     MenuInflater   inflater1;
 
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 int rotation = random.nextInt(40) + 10;
-                imageView.animate().rotation((45 * intent.getIntExtra("tedad",1)) * rotation + imageView.getRotation()).setDuration(2*(30 * rotation)*intent.getIntExtra("tedad",1));
+                imageView.animate().rotation((45 * intent.getIntExtra("tdad",1)) * (rotation/intent.getIntExtra("tdad",1)) + imageView.getRotation()).setDuration(2*(30 * rotation)*(intent.getIntExtra("tedad",1)));
                 layout.setVisibility(View.VISIBLE);
 
             }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class setind extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class setind extends AppCompatActivity {
     Button btn;
     int    imgD;
     ImageView image1,image2,image3,image4;
+    RadioButton rb8,rb4,rb2;
+    int tdad = 8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +29,28 @@ public class setind extends AppCompatActivity {
         image2 = findViewById(R.id.image2);
         image3 = findViewById(R.id.image3);
         image4 = findViewById(R.id.image4);
+        rb2 = findViewById(R.id.rb2);
+        rb4 = findViewById(R.id.rb4);
+        rb8 = findViewById(R.id.rb8);
 
         imgD = R.drawable.bottle;
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                if (rb2.isChecked())
+                    tdad = 4;
+                else if (rb4.isChecked())
+                    tdad = 2;
+               else if (rb8.isChecked())
+                    tdad = 1;
+
                 Intent intent = new Intent(setind.this, MainActivity.class);
                 finish();
                 intent.putExtra("imgD", imgD);
+                intent.putExtra("tdad",tdad);
                 startActivity(intent);
             }
         });
