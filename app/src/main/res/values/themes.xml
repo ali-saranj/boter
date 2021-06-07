@@ -8,7 +8,7 @@
         <item name="colorPrimaryVariant">#321911</item>
         <item name="colorOnPrimary">#FBF9F8</item>
         <item name="colorButtonNormal">#5d4037</item>
-        <item name="android:windowBackground">#5d4037</item>
+        <item name="android:windowBackground">#FBF9F8</item>
         <item name="android:itemBackground">#5d4037</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

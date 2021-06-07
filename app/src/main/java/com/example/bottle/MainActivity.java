@@ -49,14 +49,15 @@ public class MainActivity extends AppCompatActivity {
         inflater = getLayoutInflater();
 
         Intent intent = getIntent();
+
         imageView.setImageResource(intent.getIntExtra("imgD",R.drawable.bottle));
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                int rotation = random.nextInt(80) + 40;
-                imageView.animate().rotation(15 * rotation + imageView.getRotation()).setDuration(20 * rotation);
+                int rotation = random.nextInt(40) + 10;
+                imageView.animate().rotation((45 * intent.getIntExtra("tedad",1)) * rotation + imageView.getRotation()).setDuration(2*(30 * rotation)*intent.getIntExtra("tedad",1));
                 layout.setVisibility(View.VISIBLE);
 
             }
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.darbare:
-                Toast.makeText(this, "هنوض فعال نیست", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,Darbarema.class));
                 break;
             case R.id.amti:
                 Toast.makeText(this, "هنوض فعال نیست", Toast.LENGTH_SHORT).show();
