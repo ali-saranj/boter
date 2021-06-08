@@ -39,7 +39,6 @@ public class setind extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 if (rb2.isChecked())
                     tdad = 4;
                 else if (rb4.isChecked())

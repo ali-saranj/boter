@@ -24,8 +24,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="26dp"
         android:layout_marginTop="16dp"
-        android:text="fddgdfdkmdkmdghmdhmdgklbdgmhkdhkldmhmddmdhgkhgkdkdhdkhlhdhdfmhdhdjhdddghghdhdfhdfhdhddfdhdhdgdhdhdhdhghfhfgdhgdddfdf"/>
+        android:text="بنده سازنده این برنامه علی سارنج هستم به مدت دو سال است که در زمینه برنامه نویسی فعالیت دارم از حسن انتخاب شما بابت انتخاب این برنامه بسیار سپاس گزارم لطفا درمورد این برنامه در مایکت نظر دهید و در صورت مشاهده اشکال در این برنامه با ایمیل به بنده اطلاع دهید  "/>
+
+    <Button
+        android:id="@+id/bt_email"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ایمیل"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
