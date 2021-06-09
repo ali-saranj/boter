@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.darbare:
                 startActivity(new Intent(MainActivity.this,Darbarema.class));
+                finish();
                 break;
             case R.id.amti:
                 Toast.makeText(this, "هنوض فعال نیست", Toast.LENGTH_SHORT).show();

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,7 +39,6 @@ public class Darbarema extends AppCompatActivity {
         });
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         inflater1.inflate(R.menu.button,menu);
@@ -46,5 +46,7 @@ public class Darbarema extends AppCompatActivity {
     }
     public void click(MenuItem item) {
         startActivity(new Intent(Darbarema.this,MainActivity.class));
+        finish();
     }
+
 }

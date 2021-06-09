@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bottle" >
-        <activity android:name=".Darbarema" >
+        <activity android:name=".Darbarema"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".setind" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".setind"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
