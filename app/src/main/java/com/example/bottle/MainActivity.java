@@ -127,10 +127,9 @@ public class MainActivity extends AppCompatActivity {
             String url = "https://myket.ir/app/info.medrick.babashah";
             if (!url.startsWith("https://") && !url.startsWith("http://")) {
                 url = "http://" + url;
-
-                Intent openUrlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(openUrlIntent);
             }
+            Intent openUrlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(openUrlIntent);
         }else {
             String q = "دانلود مایکت";
             Intent intent = new Intent(Intent.ACTION_WEB_SEARCH );
