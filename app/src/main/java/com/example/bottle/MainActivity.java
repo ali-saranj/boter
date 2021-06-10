@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.SearchManager;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        System.setProperty("https.protocols", "TLSv1.1");
 
         imageView = findViewById(R.id.img);
         layout = findViewById(R.id.la);
@@ -99,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.amti:
-                Toast.makeText(this, "هنوض فعال نیست", Toast.LENGTH_SHORT).show();
+                openApp();
                 break;
             default:
                 break;
@@ -114,6 +117,26 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(text);
         dialog.setContentView(view);
         dialog.show();
+
+    }
+
+    public void openApp(){
+
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("ir.mservices.market");
+        if (launchIntent != null) {
+            String url = "https://myket.ir/app/info.medrick.babashah";
+            if (!url.startsWith("https://") && !url.startsWith("http://")) {
+                url = "http://" + url;
+
+                Intent openUrlIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(openUrlIntent);
+            }
+        }else {
+            String q = "دانلود مایکت";
+            Intent intent = new Intent(Intent.ACTION_WEB_SEARCH );
+            intent.putExtra(SearchManager.QUERY, q);
+            startActivity(intent);
+        }
 
     }
 }
