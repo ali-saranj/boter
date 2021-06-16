@@ -3,14 +3,12 @@ package com.example.bottle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
 public class setind extends AppCompatActivity {
 
@@ -63,19 +61,19 @@ public class setind extends AppCompatActivity {
         image2.setBackground(null);
         image3.setBackground(null);
         image4.setBackground(null);
-        imageView.setBackgroundColor(Color.RED);
+        imageView.setBackgroundColor(Color.GREEN);
         switch (Integer.parseInt(imageView.getTag().toString())) {
             case 1:
-                imgD = R.drawable.samshir;
+                imgD = R.drawable.fanta;
                 break;
             case 2:
                 imgD = R.drawable.bottle;
                 break;
             case 3:
-                imgD = R.drawable.tabar;
+                imgD = R.drawable.coca;
                 break;
             case 4:
-                imgD = R.drawable.gun;
+                imgD = R.drawable.tabar;
                 break;
             default:
                 break;
